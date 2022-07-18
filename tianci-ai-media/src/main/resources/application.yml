@@ -1,0 +1,19 @@
+server:
+  port: 9006
+spring:
+  application:
+    name: media
+  data:
+    mongodb:
+      database: tc_mongodb
+      uri: mongodb://10.0.0.134:27017
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 100MB
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka
+  instance:
+    prefer-ip-address: true

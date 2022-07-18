@@ -1,0 +1,129 @@
+2022-04-06 01:16:38,830 INFO (SLF4JLogger.java:71)- Opened connection [connectionId{localValue:68, serverValue:296}] to 10.0.0.134:27017
+2022-04-06 01:16:38,970 INFO (SLF4JLogger.java:71)- Monitor thread successfully connected to server with description ServerDescription{address=10.0.0.134:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 6]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5423874}
+2022-04-06 01:16:53,236 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h46m49s429ms).
+2022-04-06 01:25:51,080 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m57s604ms).
+2022-04-06 03:10:22,096 WARN (HikariPool.java:758)- HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s811ms), soft-evicting connections from pool.
+2022-04-06 03:25:43,586 INFO (SLF4JLogger.java:76)- Exception in monitor thread while connecting to server 10.0.0.134:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+2022-04-06 03:25:51,017 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s941ms).
+2022-04-06 09:57:52,071 INFO (SLF4JLogger.java:71)- Opened connection [connectionId{localValue:71, serverValue:300}] to 10.0.0.134:27017
+2022-04-06 09:57:52,085 INFO (SLF4JLogger.java:71)- Monitor thread successfully connected to server with description ServerDescription{address=10.0.0.134:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 6]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5266759}
+2022-04-06 09:57:55,174 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6h32m4s161ms).
+2022-04-06 12:23:03,496 INFO (SLF4JLogger.java:76)- Exception in monitor thread while connecting to server 10.0.0.134:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.ConnectException: Network is down (connect failed)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+2022-04-06 12:23:24,826 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s562ms).
+2022-04-06 12:42:11,832 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m41s647ms).
+2022-04-06 12:42:41,257 WARN (HikariPool.java:758)- HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s424ms), soft-evicting connections from pool.
+2022-04-06 12:52:21,731 INFO (SLF4JLogger.java:71)- Opened connection [connectionId{localValue:90, serverValue:304}] to 10.0.0.134:27017
+2022-04-06 12:52:21,876 INFO (SLF4JLogger.java:71)- Monitor thread successfully connected to server with description ServerDescription{address=10.0.0.134:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 6]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=110853872}
+2022-04-06 12:52:33,871 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m22s557ms).
+2022-04-06 13:08:06,626 INFO (SLF4JLogger.java:76)- Exception in monitor thread while connecting to server 10.0.0.134:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.ConnectException: Network is down (connect failed)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+2022-04-06 13:08:17,159 INFO (SLF4JLogger.java:71)- Opened connection [connectionId{localValue:92, serverValue:307}] to 10.0.0.134:27017
+2022-04-06 13:08:17,165 INFO (SLF4JLogger.java:71)- Monitor thread successfully connected to server with description ServerDescription{address=10.0.0.134:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 6]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2370639}
+2022-04-06 13:08:26,656 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m22s706ms).
+2022-04-06 13:18:22,630 INFO (SLF4JLogger.java:71)- Opened connection [connectionId{localValue:93, serverValue:310}] to 10.0.0.134:27017
+2022-04-06 14:04:28,294 INFO (SLF4JLogger.java:76)- Exception in monitor thread while connecting to server 10.0.0.134:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.ConnectException: Network is down (connect failed)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+2022-04-06 14:04:38,998 INFO (SLF4JLogger.java:71)- Opened connection [connectionId{localValue:95, serverValue:314}] to 10.0.0.134:27017
+2022-04-06 14:04:39,006 INFO (SLF4JLogger.java:71)- Monitor thread successfully connected to server with description ServerDescription{address=10.0.0.134:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 6]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2279699}
+2022-04-06 14:04:44,852 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m42s924ms).
+2022-04-06 14:42:58,272 INFO (SLF4JLogger.java:76)- Exception in monitor thread while connecting to server 10.0.0.134:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.ConnectException: Network is down (connect failed)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+2022-04-06 14:43:07,945 INFO (SLF4JLogger.java:71)- Opened connection [connectionId{localValue:97, serverValue:317}] to 10.0.0.134:27017
+2022-04-06 14:43:07,952 INFO (SLF4JLogger.java:71)- Monitor thread successfully connected to server with description ServerDescription{address=10.0.0.134:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 6]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3615383}
+2022-04-06 14:46:08,610 INFO (SLF4JLogger.java:76)- Exception in monitor thread while connecting to server 10.0.0.134:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.ConnectException: Network is down (connect failed)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+2022-04-06 16:46:05,688 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h59m50s410ms).
+2022-04-06 16:47:12,943 INFO (SLF4JLogger.java:71)- Opened connection [connectionId{localValue:100, serverValue:318}] to 10.0.0.134:27017
+2022-04-06 16:47:12,956 INFO (SLF4JLogger.java:71)- Monitor thread successfully connected to server with description ServerDescription{address=10.0.0.134:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 6]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3840564}
+2022-04-06 16:47:29,972 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m24s289ms).
+2022-04-06 16:47:32,546 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-06 16:47:35,500 INFO (SLF4JLogger.java:71)- Closed connection [connectionId{localValue:25, serverValue:285}] to 10.0.0.134:27017 because there was a socket exception raised on another connection from this pool.
+2022-04-06 16:47:35,888 INFO (AbstractEntityManagerFactoryBean.java:597)- Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-06 16:47:36,222 INFO (HikariDataSource.java:350)- HikariPool-1 - Shutdown initiated...
+2022-04-06 16:47:36,406 INFO (HikariDataSource.java:352)- HikariPool-1 - Shutdown completed.

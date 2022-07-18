@@ -1,0 +1,46 @@
+2022-04-16 00:30:52,625 INFO (SpringApplication.java:679)- The following profiles are active: test
+2022-04-16 00:30:54,406 INFO (RepositoryConfigurationDelegate.java:244)- Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-16 00:30:54,409 INFO (RepositoryConfigurationDelegate.java:126)- Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-04-16 00:30:54,507 INFO (RepositoryConfigurationExtensionSupport.java:363)- Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.tianci.media.dao.MediaSystemRepository.
+2022-04-16 00:30:54,508 INFO (RepositoryConfigurationDelegate.java:182)- Finished Spring Data repository scanning in 83ms. Found 0 repository interfaces.
+2022-04-16 00:30:54,550 INFO (RepositoryConfigurationDelegate.java:244)- Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-16 00:30:54,551 INFO (RepositoryConfigurationDelegate.java:126)- Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-04-16 00:30:54,833 INFO (RepositoryConfigurationDelegate.java:182)- Finished Spring Data repository scanning in 282ms. Found 1 repository interfaces.
+2022-04-16 00:30:54,867 INFO (RepositoryConfigurationDelegate.java:244)- Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-16 00:30:54,872 INFO (RepositoryConfigurationDelegate.java:126)- Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-04-16 00:30:55,018 INFO (RepositoryConfigurationExtensionSupport.java:363)- Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.tianci.media.dao.MediaSystemRepository.
+2022-04-16 00:30:55,018 INFO (RepositoryConfigurationDelegate.java:182)- Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+2022-04-16 00:30:55,619 INFO (GenericScope.java:295)- BeanFactory id=94df4b8b-9b8e-3886-abcf-1c2d10fedc46
+2022-04-16 00:30:55,972 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a9a57a13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-16 00:30:56,723 INFO (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-04-16 00:30:57,186 INFO (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-04-16 00:30:57,387 INFO (LogHelper.java:31)- HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-04-16 00:30:57,578 INFO (Version.java:46)- HHH000412: Hibernate Core {5.3.10.Final}
+2022-04-16 00:30:57,586 INFO (Environment.java:213)- HHH000206: hibernate.properties not found
+2022-04-16 00:30:57,954 INFO (JavaReflectionManager.java:49)- HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-04-16 00:30:58,211 INFO (Dialect.java:157)- HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-04-16 00:30:58,582 INFO (AbstractEntityManagerFactoryBean.java:415)- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-16 00:31:04,539 INFO (SLF4JLogger.java:71)- Cluster created with settings {hosts=[10.0.0.134:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-04-16 00:31:04,688 INFO (SLF4JLogger.java:71)- Opened connection [connectionId{localValue:1, serverValue:66}] to 10.0.0.134:27017
+2022-04-16 00:31:04,708 INFO (SLF4JLogger.java:71)- Monitor thread successfully connected to server with description ServerDescription{address=10.0.0.134:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 6]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=8156452}
+2022-04-16 00:31:07,400 WARN (JpaBaseConfiguration.java:237)- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-16 00:31:07,846 INFO (PropertySourcedRequestMappingHandlerMapping.java:69)- Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-04-16 00:31:08,250 WARN (URLConfigurationSource.java:121)- No URLs will be polled as dynamic configuration sources.
+2022-04-16 00:31:08,250 INFO (URLConfigurationSource.java:122)- To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-16 00:31:08,263 WARN (URLConfigurationSource.java:121)- No URLs will be polled as dynamic configuration sources.
+2022-04-16 00:31:08,263 INFO (URLConfigurationSource.java:122)- To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-16 00:31:08,837 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-16 00:31:10,579 INFO (DocumentationPluginsBootstrapper.java:147)- Context refreshed
+2022-04-16 00:31:10,619 INFO (DocumentationPluginsBootstrapper.java:150)- Found 1 custom documentation plugin(s)
+2022-04-16 00:31:10,696 INFO (ApiListingReferenceScanner.java:41)- Scanning for api listing references
+2022-04-16 00:31:10,980 INFO (StartupInfoLogger.java:59)- Started RedisTest in 40.075 seconds (JVM running for 43.296)
+2022-04-16 00:31:11,369 INFO (EpollProvider.java:68)- Starting without optional epoll library
+2022-04-16 00:31:11,371 INFO (KqueueProvider.java:70)- Starting without optional kqueue library
+2022-04-16 00:31:16,723 INFO (InstanceInfoFactory.java:72)- Setting initial instance status as: STARTING
+2022-04-16 00:31:16,730 INFO (EurekaServiceRegistry.java:65)- Unregistering application MEDIA with eureka with status DOWN
+2022-04-16 00:31:16,741 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-16 00:31:17,916 INFO (AbstractEntityManagerFactoryBean.java:597)- Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-16 00:31:17,925 INFO (HikariDataSource.java:350)- HikariPool-1 - Shutdown initiated...
+2022-04-16 00:31:17,939 INFO (HikariDataSource.java:352)- HikariPool-1 - Shutdown completed.

@@ -1,0 +1,490 @@
+2022-04-17 00:37:12,082 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h5m1s962ms).
+2022-04-17 00:37:19,677 INFO (SLF4JLogger.java:71)- Opened connection [connectionId{localValue:24, serverValue:105}] to 10.0.0.134:27017
+2022-04-17 00:37:19,683 INFO (SLF4JLogger.java:71)- Monitor thread successfully connected to server with description ServerDescription{address=10.0.0.134:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 6]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2111336}
+2022-04-17 00:37:41,908 WARN (HikariPool.java:758)- HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s826ms), soft-evicting connections from pool.
+2022-04-17 00:38:14,828 INFO (SLF4JLogger.java:76)- Exception in monitor thread while connecting to server 10.0.0.134:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+2022-04-17 01:07:51,520 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 01:08:14,013 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=29m26s727ms).
+2022-04-17 01:23:42,835 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s822ms).
+2022-04-17 01:39:41,557 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s742ms).
+2022-04-17 04:42:31,587 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h1m17s285ms).
+2022-04-17 04:58:00,179 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s591ms).
+2022-04-17 04:58:37,660 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 05:13:59,049 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s873ms).
+2022-04-17 05:29:38,093 INFO (DefaultRequestDirector.java:690)- I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7001: Connection reset
+2022-04-17 05:29:38,102 INFO (DefaultRequestDirector.java:700)- Retrying request to {}->http://127.0.0.1:7001
+2022-04-17 05:29:38,112 ERROR (RedirectingEurekaHttpClient.java:91)- Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://127.0.0.1:7001/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.SocketException: Connection reset
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:864)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1423)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:161)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:82)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:276)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:294)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:257)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:230)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:679)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:481)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 26 common frames omitted
+2022-04-17 05:29:38,114 WARN (RetryableEurekaHttpClient.java:130)- Request execution failed with message: java.net.SocketException: Connection reset
+2022-04-17 05:29:38,120 INFO (RetryableEurekaHttpClient.java:124)- Request execution succeeded on retry #1
+2022-04-17 05:29:57,818 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s745ms).
+2022-04-17 05:45:56,537 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s709ms).
+2022-04-17 06:01:25,253 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s716ms).
+2022-04-17 06:17:23,976 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s757ms).
+2022-04-17 06:33:22,872 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s872ms).
+2022-04-17 06:33:30,274 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 06:49:21,458 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s577ms).
+2022-04-17 07:04:50,087 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s629ms).
+2022-04-17 07:20:48,854 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s759ms).
+2022-04-17 07:36:47,655 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s794ms).
+2022-04-17 07:52:16,007 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s351ms).
+2022-04-17 08:08:15,523 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s835ms).
+2022-04-17 08:08:22,356 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 08:15:15,844 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m30s312ms).
+2022-04-17 08:19:22,677 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 08:24:22,684 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 08:29:22,699 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 08:34:22,707 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 08:39:22,719 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 08:44:22,727 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 08:49:22,741 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 08:54:22,747 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 08:59:22,762 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 09:04:22,772 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 09:09:22,784 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 09:14:22,800 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 09:30:15,453 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s785ms).
+2022-04-17 09:46:14,287 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s824ms).
+2022-04-17 10:02:13,104 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s809ms).
+2022-04-17 10:17:41,887 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s783ms).
+2022-04-17 10:33:40,485 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s567ms).
+2022-04-17 10:34:16,569 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 10:49:21,070 INFO (DefaultRequestDirector.java:690)- I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7001: Connection reset
+2022-04-17 10:49:21,074 INFO (DefaultRequestDirector.java:700)- Retrying request to {}->http://127.0.0.1:7001
+2022-04-17 10:49:21,076 ERROR (RedirectingEurekaHttpClient.java:91)- Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://127.0.0.1:7001/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.SocketException: Connection reset
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:864)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1423)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:161)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:82)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:276)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:294)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:257)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:230)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:679)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:481)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 26 common frames omitted
+2022-04-17 10:49:21,079 WARN (RetryableEurekaHttpClient.java:130)- Request execution failed with message: java.net.SocketException: Connection reset
+2022-04-17 10:49:21,085 INFO (RetryableEurekaHttpClient.java:124)- Request execution succeeded on retry #1
+2022-04-17 10:49:39,272 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s779ms).
+2022-04-17 11:05:38,152 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s868ms).
+2022-04-17 11:21:06,995 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s843ms).
+2022-04-17 13:38:52,792 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h16m14s229ms).
+2022-04-17 13:38:55,381 INFO (SLF4JLogger.java:71)- Opened connection [connectionId{localValue:254, serverValue:109}] to 10.0.0.134:27017
+2022-04-17 13:38:55,388 INFO (SLF4JLogger.java:71)- Monitor thread successfully connected to server with description ServerDescription{address=10.0.0.134:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 6]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2775020}
+2022-04-17 13:39:58,807 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 13:44:58,838 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 13:49:58,864 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 13:54:58,890 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 13:59:58,880 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 14:04:58,899 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 14:09:58,917 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 14:14:58,933 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 14:19:58,956 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 14:24:58,970 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 14:29:58,988 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 14:34:58,986 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 14:39:59,004 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 14:44:59,016 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 14:49:59,043 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 14:54:59,026 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 15:26:09,570 INFO (SLF4JLogger.java:76)- Exception in monitor thread while connecting to server 10.0.0.134:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+2022-04-17 15:26:14,190 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m20s760ms).
+2022-04-17 15:43:25,657 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m11s475ms).
+2022-04-17 16:00:58,909 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m3s243ms).
+2022-04-17 16:22:37,607 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=21m8s696ms).
+2022-04-17 16:37:16,598 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m8s977ms).
+2022-04-17 16:37:22,149 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 17:07:49,061 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=29m26s209ms).
+2022-04-17 17:11:35,579 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m16s516ms).
+2022-04-17 21:01:09,290 INFO (EurekaServiceRegistry.java:65)- Unregistering application MEDIA with eureka with status DOWN
+2022-04-17 21:01:09,355 WARN (DiscoveryClient.java:1321)- Saw local status change event StatusChangeEvent [timestamp=1650243669350, current=DOWN, previous=UP]
+2022-04-17 21:01:09,470 INFO (DiscoveryClient.java:844)- DiscoveryClient_MEDIA/10.0.0.114:media:9006: registering service...
+2022-04-17 21:01:09,661 INFO (DiscoveryClient.java:853)- DiscoveryClient_MEDIA/10.0.0.114:media:9006 - registration status: 204
+2022-04-17 21:01:10,908 INFO (ExecutorConfigurationSupport.java:208)- Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-17 21:01:11,663 INFO (SLF4JLogger.java:71)- Closed connection [connectionId{localValue:2, serverValue:101}] to 10.0.0.134:27017 because there was a socket exception raised on another connection from this pool.
+2022-04-17 21:01:11,716 INFO (AbstractEntityManagerFactoryBean.java:597)- Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-17 21:01:11,916 INFO (HikariDataSource.java:350)- HikariPool-1 - Shutdown initiated...
+2022-04-17 21:01:11,954 INFO (HikariDataSource.java:352)- HikariPool-1 - Shutdown completed.
+2022-04-17 21:01:13,730 INFO (DiscoveryClient.java:906)- Shutting down DiscoveryClient ...
+2022-04-17 21:01:16,737 INFO (DiscoveryClient.java:940)- Unregistering ...
+2022-04-17 21:01:16,834 ERROR (RedirectingEurekaHttpClient.java:91)- Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://127.0.0.1:7001/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.delete(WebResource.java:591)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.cancel(AbstractJerseyEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:941)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:919)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:156)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:240)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:233)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1034)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1027)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 41 common frames omitted
+2022-04-17 21:01:16,849 WARN (RetryableEurekaHttpClient.java:130)- Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2022-04-17 21:01:16,853 ERROR (RedirectingEurekaHttpClient.java:83)- Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://127.0.0.1:7001/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.delete(WebResource.java:591)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.cancel(AbstractJerseyEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:941)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:919)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:156)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:240)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:233)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1034)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1027)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 42 common frames omitted
+2022-04-17 21:01:16,869 WARN (RetryableEurekaHttpClient.java:130)- Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2022-04-17 21:01:16,878 ERROR (DiscoveryClient.java:944)- DiscoveryClient_MEDIA/10.0.0.114:media:9006 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:941)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:919)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:156)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:240)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:233)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1034)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1027)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
+2022-04-17 21:01:17,087 INFO (DiscoveryClient.java:929)- Completed shut down of DiscoveryClient
+2022-04-17 21:51:41,054 INFO (SpringApplication.java:679)- The following profiles are active: test
+2022-04-17 21:51:42,898 INFO (RepositoryConfigurationDelegate.java:244)- Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-17 21:51:42,928 INFO (RepositoryConfigurationDelegate.java:126)- Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-04-17 21:51:43,027 INFO (RepositoryConfigurationExtensionSupport.java:363)- Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.tianci.media.dao.MediaSystemRepository.
+2022-04-17 21:51:43,028 INFO (RepositoryConfigurationDelegate.java:182)- Finished Spring Data repository scanning in 76ms. Found 0 repository interfaces.
+2022-04-17 21:51:43,059 INFO (RepositoryConfigurationDelegate.java:244)- Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-17 21:51:43,060 INFO (RepositoryConfigurationDelegate.java:126)- Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-04-17 21:51:43,116 INFO (RepositoryConfigurationDelegate.java:182)- Finished Spring Data repository scanning in 55ms. Found 1 repository interfaces.
+2022-04-17 21:51:43,175 INFO (RepositoryConfigurationDelegate.java:244)- Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-17 21:51:43,196 INFO (RepositoryConfigurationDelegate.java:126)- Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-04-17 21:51:43,211 INFO (RepositoryConfigurationExtensionSupport.java:363)- Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.tianci.media.dao.MediaSystemRepository.
+2022-04-17 21:51:43,211 INFO (RepositoryConfigurationDelegate.java:182)- Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+2022-04-17 21:51:44,121 INFO (GenericScope.java:295)- BeanFactory id=b35db6e0-0bf9-349b-b8fa-34edc0fe7652
+2022-04-17 21:51:44,866 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$53569d8d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-17 21:51:46,546 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 9006 (http)
+2022-04-17 21:51:46,585 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9006"]
+2022-04-17 21:51:46,606 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-04-17 21:51:46,608 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.19]
+2022-04-17 21:51:47,290 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-04-17 21:51:47,291 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 6214 ms
+2022-04-17 21:51:49,634 INFO (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-04-17 21:51:50,700 INFO (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-04-17 21:51:51,008 INFO (LogHelper.java:31)- HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-04-17 21:51:51,247 INFO (Version.java:46)- HHH000412: Hibernate Core {5.3.10.Final}
+2022-04-17 21:51:51,250 INFO (Environment.java:213)- HHH000206: hibernate.properties not found
+2022-04-17 21:51:51,787 INFO (JavaReflectionManager.java:49)- HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-04-17 21:51:52,108 INFO (Dialect.java:157)- HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-04-17 21:51:52,798 INFO (AbstractEntityManagerFactoryBean.java:415)- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-17 21:51:59,099 INFO (SLF4JLogger.java:71)- Cluster created with settings {hosts=[10.0.0.134:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-04-17 21:51:59,180 INFO (SLF4JLogger.java:71)- Opened connection [connectionId{localValue:1, serverValue:113}] to 10.0.0.134:27017
+2022-04-17 21:51:59,186 INFO (SLF4JLogger.java:71)- Monitor thread successfully connected to server with description ServerDescription{address=10.0.0.134:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 6]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3691799}
+2022-04-17 21:52:00,447 WARN (JpaBaseConfiguration.java:237)- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-17 21:52:00,704 INFO (PropertySourcedRequestMappingHandlerMapping.java:69)- Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-04-17 21:52:00,760 WARN (URLConfigurationSource.java:121)- No URLs will be polled as dynamic configuration sources.
+2022-04-17 21:52:00,761 INFO (URLConfigurationSource.java:122)- To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-17 21:52:00,772 WARN (URLConfigurationSource.java:121)- No URLs will be polled as dynamic configuration sources.
+2022-04-17 21:52:00,773 INFO (URLConfigurationSource.java:122)- To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-17 21:52:01,112 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-17 21:52:02,382 INFO (InstanceInfoFactory.java:72)- Setting initial instance status as: STARTING
+2022-04-17 21:52:02,444 INFO (DiscoveryClient.java:365)- Initializing Eureka in region us-east-1
+2022-04-17 21:52:02,610 INFO (DiscoveryJerseyProvider.java:70)- Using JSON encoding codec LegacyJacksonJson
+2022-04-17 21:52:02,611 INFO (DiscoveryJerseyProvider.java:71)- Using JSON decoding codec LegacyJacksonJson
+2022-04-17 21:52:03,454 INFO (DiscoveryJerseyProvider.java:80)- Using XML encoding codec XStreamXml
+2022-04-17 21:52:03,455 INFO (DiscoveryJerseyProvider.java:81)- Using XML decoding codec XStreamXml
+2022-04-17 21:52:04,219 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 21:52:04,262 INFO (DiscoveryClient.java:976)- Disable delta property : false
+2022-04-17 21:52:04,263 INFO (DiscoveryClient.java:977)- Single vip registry refresh property : null
+2022-04-17 21:52:04,263 INFO (DiscoveryClient.java:978)- Force full registry fetch : false
+2022-04-17 21:52:04,264 INFO (DiscoveryClient.java:979)- Application is null : false
+2022-04-17 21:52:04,264 INFO (DiscoveryClient.java:980)- Registered Applications size is zero : true
+2022-04-17 21:52:04,264 INFO (DiscoveryClient.java:982)- Application version is -1: true
+2022-04-17 21:52:04,265 INFO (DiscoveryClient.java:1065)- Getting all instance registry info from the eureka server
+2022-04-17 21:52:04,613 INFO (DiscoveryClient.java:1074)- The response status is 200
+2022-04-17 21:52:04,618 INFO (DiscoveryClient.java:1288)- Starting heartbeat executor: renew interval is: 30
+2022-04-17 21:52:04,622 INFO (InstanceInfoReplicator.java:60)- InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-04-17 21:52:04,628 INFO (DiscoveryClient.java:465)- Discovery Client initialized at timestamp 1650246724626 with initial instances count: 1
+2022-04-17 21:52:04,633 INFO (EurekaServiceRegistry.java:41)- Registering application MEDIA with eureka with status UP
+2022-04-17 21:52:04,635 INFO (DiscoveryClient.java:1323)- Saw local status change event StatusChangeEvent [timestamp=1650246724635, current=UP, previous=STARTING]
+2022-04-17 21:52:04,638 INFO (DiscoveryClient.java:844)- DiscoveryClient_MEDIA/10.0.0.114:media:9006: registering service...
+2022-04-17 21:52:04,638 INFO (DocumentationPluginsBootstrapper.java:147)- Context refreshed
+2022-04-17 21:52:04,665 INFO (DocumentationPluginsBootstrapper.java:150)- Found 1 custom documentation plugin(s)
+2022-04-17 21:52:04,747 INFO (DiscoveryClient.java:853)- DiscoveryClient_MEDIA/10.0.0.114:media:9006 - registration status: 204
+2022-04-17 21:52:04,790 INFO (ApiListingReferenceScanner.java:41)- Scanning for api listing references
+2022-04-17 21:52:05,172 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9006"]
+2022-04-17 21:52:05,228 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 9006 (http) with context path ''
+2022-04-17 21:52:05,232 INFO (EurekaAutoServiceRegistration.java:145)- Updating port to 9006
+2022-04-17 21:52:05,240 INFO (StartupInfoLogger.java:59)- Started MediaJarApplication in 48.968 seconds (JVM running for 57.805)
+2022-04-17 21:57:04,306 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 22:00:51,116 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-17 22:00:51,120 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2022-04-17 22:00:51,268 INFO (FrameworkServlet.java:546)- Completed initialization in 147 ms
+2022-04-17 22:00:52,941 INFO (EpollProvider.java:68)- Starting without optional epoll library
+2022-04-17 22:00:52,943 INFO (KqueueProvider.java:70)- Starting without optional kqueue library
+2022-04-17 22:02:04,412 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 22:04:14,581 INFO (SLF4JLogger.java:71)- Opened connection [connectionId{localValue:2, serverValue:114}] to 10.0.0.134:27017
+2022-04-17 22:04:17,184 INFO (ImageServiceImpl.java:131)- success{"predicted": "Neverfull"}
+2022-04-17 22:07:04,502 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 22:11:15,664 INFO (ImageServiceImpl.java:131)- success{"predicted": "Onthego"}
+2022-04-17 22:12:04,582 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 22:17:04,622 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 22:22:04,676 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 22:27:04,709 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 22:53:14,269 INFO (SLF4JLogger.java:71)- Opened connection [connectionId{localValue:3, serverValue:115}] to 10.0.0.134:27017
+2022-04-17 22:53:16,710 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m25s422ms).
+2022-04-17 22:54:00,159 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 22:54:11,734 INFO (SLF4JLogger.java:71)- Closed connection [connectionId{localValue:2, serverValue:114}] to 10.0.0.134:27017 because there was a socket exception raised on another connection from this pool.
+2022-04-17 22:54:11,781 INFO (SLF4JLogger.java:71)- Opened connection [connectionId{localValue:4, serverValue:118}] to 10.0.0.134:27017
+2022-04-17 22:54:13,707 INFO (ImageServiceImpl.java:131)- success{"predicted": "Ophidia small shoulder bag"}
+2022-04-17 22:59:00,177 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 23:04:00,225 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 23:09:00,285 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 23:14:00,312 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 23:18:22,093 INFO (SLF4JLogger.java:71)- Opened connection [connectionId{localValue:5, serverValue:121}] to 10.0.0.134:27017
+2022-04-17 23:18:32,593 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m45s655ms).
+2022-04-17 23:22:15,997 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 23:27:16,026 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 23:32:16,061 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 23:37:16,084 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 23:42:16,113 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 23:47:16,139 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 23:52:16,116 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-17 23:59:12,479 INFO (SLF4JLogger.java:71)- Opened connection [connectionId{localValue:6, serverValue:124}] to 10.0.0.134:27017
+2022-04-17 23:59:17,810 INFO (DiscoveryClient.java:868)- DiscoveryClient_MEDIA/10.0.0.114:media:9006 - Re-registering apps/MEDIA
+2022-04-17 23:59:17,815 INFO (DiscoveryClient.java:844)- DiscoveryClient_MEDIA/10.0.0.114:media:9006: registering service...
+2022-04-17 23:59:17,898 INFO (DiscoveryClient.java:853)- DiscoveryClient_MEDIA/10.0.0.114:media:9006 - registration status: 204
+2022-04-17 23:59:31,072 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m28s231ms).

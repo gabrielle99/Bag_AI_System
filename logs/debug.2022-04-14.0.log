@@ -1,0 +1,194 @@
+2022-04-14 17:31:07,530 INFO (SpringApplication.java:679)- The following profiles are active: test
+2022-04-14 17:31:08,863 INFO (RepositoryConfigurationDelegate.java:244)- Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-14 17:31:08,863 INFO (RepositoryConfigurationDelegate.java:126)- Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-04-14 17:31:08,916 INFO (RepositoryConfigurationExtensionSupport.java:363)- Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.tianci.media.dao.MediaSystemRepository.
+2022-04-14 17:31:08,917 INFO (RepositoryConfigurationDelegate.java:182)- Finished Spring Data repository scanning in 44ms. Found 0 repository interfaces.
+2022-04-14 17:31:08,942 INFO (RepositoryConfigurationDelegate.java:244)- Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-14 17:31:08,942 INFO (RepositoryConfigurationDelegate.java:126)- Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-04-14 17:31:08,984 INFO (RepositoryConfigurationDelegate.java:182)- Finished Spring Data repository scanning in 42ms. Found 1 repository interfaces.
+2022-04-14 17:31:08,999 INFO (RepositoryConfigurationDelegate.java:244)- Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-14 17:31:09,001 INFO (RepositoryConfigurationDelegate.java:126)- Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-04-14 17:31:09,021 INFO (RepositoryConfigurationExtensionSupport.java:363)- Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.tianci.media.dao.MediaSystemRepository.
+2022-04-14 17:31:09,022 INFO (RepositoryConfigurationDelegate.java:182)- Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2022-04-14 17:31:09,454 INFO (GenericScope.java:295)- BeanFactory id=b35db6e0-0bf9-349b-b8fa-34edc0fe7652
+2022-04-14 17:31:09,768 INFO (PostProcessorRegistrationDelegate.java:330)- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e18e61ae] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-14 17:31:10,530 INFO (TomcatWebServer.java:90)- Tomcat initialized with port(s): 9006 (http)
+2022-04-14 17:31:10,552 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-9006"]
+2022-04-14 17:31:10,563 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-04-14 17:31:10,564 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.19]
+2022-04-14 17:31:10,701 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-04-14 17:31:10,702 INFO (ServletWebServerApplicationContext.java:296)- Root WebApplicationContext: initialization completed in 3146 ms
+2022-04-14 17:31:11,319 INFO (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-04-14 17:31:12,006 INFO (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-04-14 17:31:12,111 INFO (LogHelper.java:31)- HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-04-14 17:31:12,217 INFO (Version.java:46)- HHH000412: Hibernate Core {5.3.10.Final}
+2022-04-14 17:31:12,222 INFO (Environment.java:213)- HHH000206: hibernate.properties not found
+2022-04-14 17:31:12,450 INFO (JavaReflectionManager.java:49)- HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-04-14 17:31:12,629 INFO (Dialect.java:157)- HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-04-14 17:31:12,863 INFO (AbstractEntityManagerFactoryBean.java:415)- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-14 17:31:18,244 INFO (SLF4JLogger.java:71)- Cluster created with settings {hosts=[10.0.0.134:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-04-14 17:31:18,311 INFO (SLF4JLogger.java:71)- Opened connection [connectionId{localValue:1, serverValue:8}] to 10.0.0.134:27017
+2022-04-14 17:31:18,320 INFO (SLF4JLogger.java:71)- Monitor thread successfully connected to server with description ServerDescription{address=10.0.0.134:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 6]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4619778}
+2022-04-14 17:31:19,337 WARN (JpaBaseConfiguration.java:237)- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-14 17:31:19,516 INFO (PropertySourcedRequestMappingHandlerMapping.java:69)- Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-04-14 17:31:19,782 WARN (URLConfigurationSource.java:121)- No URLs will be polled as dynamic configuration sources.
+2022-04-14 17:31:19,782 INFO (URLConfigurationSource.java:122)- To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-14 17:31:19,787 WARN (URLConfigurationSource.java:121)- No URLs will be polled as dynamic configuration sources.
+2022-04-14 17:31:19,788 INFO (URLConfigurationSource.java:122)- To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-04-14 17:31:19,979 INFO (ExecutorConfigurationSupport.java:171)- Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-14 17:31:20,679 INFO (InstanceInfoFactory.java:72)- Setting initial instance status as: STARTING
+2022-04-14 17:31:20,711 INFO (DiscoveryClient.java:365)- Initializing Eureka in region us-east-1
+2022-04-14 17:31:20,791 INFO (DiscoveryJerseyProvider.java:70)- Using JSON encoding codec LegacyJacksonJson
+2022-04-14 17:31:20,791 INFO (DiscoveryJerseyProvider.java:71)- Using JSON decoding codec LegacyJacksonJson
+2022-04-14 17:31:20,973 INFO (DiscoveryJerseyProvider.java:80)- Using XML encoding codec XStreamXml
+2022-04-14 17:31:20,974 INFO (DiscoveryJerseyProvider.java:81)- Using XML decoding codec XStreamXml
+2022-04-14 17:31:21,342 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-14 17:31:21,369 INFO (DiscoveryClient.java:976)- Disable delta property : false
+2022-04-14 17:31:21,369 INFO (DiscoveryClient.java:977)- Single vip registry refresh property : null
+2022-04-14 17:31:21,369 INFO (DiscoveryClient.java:978)- Force full registry fetch : false
+2022-04-14 17:31:21,370 INFO (DiscoveryClient.java:979)- Application is null : false
+2022-04-14 17:31:21,370 INFO (DiscoveryClient.java:980)- Registered Applications size is zero : true
+2022-04-14 17:31:21,370 INFO (DiscoveryClient.java:982)- Application version is -1: true
+2022-04-14 17:31:21,370 INFO (DiscoveryClient.java:1065)- Getting all instance registry info from the eureka server
+2022-04-14 17:31:21,605 INFO (DiscoveryClient.java:1074)- The response status is 200
+2022-04-14 17:31:21,617 INFO (DiscoveryClient.java:1288)- Starting heartbeat executor: renew interval is: 30
+2022-04-14 17:31:21,621 INFO (InstanceInfoReplicator.java:60)- InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-04-14 17:31:21,629 INFO (DiscoveryClient.java:465)- Discovery Client initialized at timestamp 1649971881625 with initial instances count: 1
+2022-04-14 17:31:21,636 INFO (EurekaServiceRegistry.java:41)- Registering application MEDIA with eureka with status UP
+2022-04-14 17:31:21,637 INFO (DiscoveryClient.java:1323)- Saw local status change event StatusChangeEvent [timestamp=1649971881637, current=UP, previous=STARTING]
+2022-04-14 17:31:21,641 INFO (DiscoveryClient.java:844)- DiscoveryClient_MEDIA/10.0.0.114:media:9006: registering service...
+2022-04-14 17:31:21,642 INFO (DocumentationPluginsBootstrapper.java:147)- Context refreshed
+2022-04-14 17:31:21,677 INFO (DocumentationPluginsBootstrapper.java:150)- Found 1 custom documentation plugin(s)
+2022-04-14 17:31:21,703 INFO (DiscoveryClient.java:853)- DiscoveryClient_MEDIA/10.0.0.114:media:9006 - registration status: 204
+2022-04-14 17:31:21,736 INFO (ApiListingReferenceScanner.java:41)- Scanning for api listing references
+2022-04-14 17:31:21,969 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-9006"]
+2022-04-14 17:31:22,013 INFO (TomcatWebServer.java:204)- Tomcat started on port(s): 9006 (http) with context path ''
+2022-04-14 17:31:22,015 INFO (EurekaAutoServiceRegistration.java:145)- Updating port to 9006
+2022-04-14 17:31:22,021 INFO (StartupInfoLogger.java:59)- Started MediaJarApplication in 35.818 seconds (JVM running for 43.194)
+2022-04-14 17:36:21,380 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-14 17:41:21,450 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-14 17:46:21,464 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-14 17:51:21,479 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-14 17:56:21,496 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-14 20:00:04,576 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h22s172ms).
+2022-04-14 20:58:56,767 INFO (SLF4JLogger.java:76)- Exception in monitor thread while connecting to server 10.0.0.134:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.ConnectException: Operation timed out (Connection timed out)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+2022-04-14 20:59:07,037 INFO (SLF4JLogger.java:71)- Opened connection [connectionId{localValue:3, serverValue:10}] to 10.0.0.134:27017
+2022-04-14 20:59:07,040 INFO (SLF4JLogger.java:71)- Monitor thread successfully connected to server with description ServerDescription{address=10.0.0.134:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 6]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1695968}
+2022-04-14 20:59:24,444 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59m19s876ms).
+2022-04-14 21:00:03,530 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-14 21:04:57,513 INFO (SLF4JLogger.java:76)- Exception in monitor thread while connecting to server 10.0.0.134:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.ConnectException: Network is down (connect failed)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+2022-04-14 21:05:07,692 INFO (SLF4JLogger.java:71)- Opened connection [connectionId{localValue:5, serverValue:14}] to 10.0.0.134:27017
+2022-04-14 21:05:07,696 INFO (SLF4JLogger.java:71)- Monitor thread successfully connected to server with description ServerDescription{address=10.0.0.134:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 6]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2647492}
+2022-04-14 21:05:14,937 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50s212ms).
+2022-04-14 21:05:23,993 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-14 21:10:24,010 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-14 21:12:56,431 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-14 21:12:56,436 INFO (FrameworkServlet.java:524)- Initializing Servlet 'dispatcherServlet'
+2022-04-14 21:12:56,625 INFO (FrameworkServlet.java:546)- Completed initialization in 188 ms
+2022-04-14 21:15:24,036 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-14 21:20:24,057 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-14 21:25:24,083 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-14 21:30:24,102 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-14 21:33:50,517 INFO (SLF4JLogger.java:71)- Opened connection [connectionId{localValue:6, serverValue:17}] to 10.0.0.134:27017
+2022-04-14 21:34:06,793 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m21s427ms).
+2022-04-14 21:37:15,709 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-14 21:42:15,727 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-14 21:54:49,230 INFO (SLF4JLogger.java:76)- Exception in monitor thread while connecting to server 10.0.0.134:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.ConnectException: Network is down (connect failed)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+2022-04-14 21:54:54,619 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m17s738ms).
+2022-04-14 21:54:59,840 INFO (SLF4JLogger.java:71)- Opened connection [connectionId{localValue:8, serverValue:21}] to 10.0.0.134:27017
+2022-04-14 21:54:59,843 INFO (SLF4JLogger.java:71)- Monitor thread successfully connected to server with description ServerDescription{address=10.0.0.134:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 6]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1865069}
+2022-04-14 22:04:15,008 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m50s358ms).
+2022-04-14 22:04:20,934 INFO (SLF4JLogger.java:71)- Opened connection [connectionId{localValue:9, serverValue:22}] to 10.0.0.134:27017
+2022-04-14 22:04:24,359 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-14 22:30:59,509 INFO (SLF4JLogger.java:76)- Exception in monitor thread while connecting to server 10.0.0.134:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.ConnectException: Network is down (connect failed)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+2022-04-14 22:31:04,996 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m18s665ms).
+2022-04-14 22:31:10,043 INFO (SLF4JLogger.java:71)- Opened connection [connectionId{localValue:11, serverValue:25}] to 10.0.0.134:27017
+2022-04-14 22:31:10,047 INFO (SLF4JLogger.java:71)- Monitor thread successfully connected to server with description ServerDescription{address=10.0.0.134:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 6]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2328635}
+2022-04-14 22:32:13,042 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-14 22:37:13,055 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-14 22:41:04,930 WARN (HikariPool.java:758)- HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s857ms), soft-evicting connections from pool.
+2022-04-14 23:04:36,475 INFO (SLF4JLogger.java:71)- Opened connection [connectionId{localValue:12, serverValue:29}] to 10.0.0.134:27017
+2022-04-14 23:04:41,093 WARN (HikariPool.java:766)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m36s163ms).
+2022-04-14 23:04:52,240 INFO (DiscoveryClient.java:868)- DiscoveryClient_MEDIA/10.0.0.114:media:9006 - Re-registering apps/MEDIA
+2022-04-14 23:04:52,243 INFO (DiscoveryClient.java:844)- DiscoveryClient_MEDIA/10.0.0.114:media:9006: registering service...
+2022-04-14 23:04:52,289 INFO (DiscoveryClient.java:853)- DiscoveryClient_MEDIA/10.0.0.114:media:9006 - registration status: 204
+2022-04-14 23:05:19,009 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2022-04-14 23:05:36,478 INFO (SLF4JLogger.java:76)- Exception in monitor thread while connecting to server 10.0.0.134:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+2022-04-14 23:05:41,079 WARN (HikariPool.java:758)- HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s438ms), soft-evicting connections from pool.

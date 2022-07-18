@@ -1,0 +1,11 @@
+com/tianci/model/response/ResultCode.class
+com/tianci/model/user/pojo/TcUserImageObj.class
+com/tianci/model/user/pojo/TcUserObject.class
+com/tianci/model/media/pojo/ImagePojo.class
+com/tianci/model/response/CommonCode.class
+com/tianci/model/mappers/log/LogMapper.class
+com/tianci/model/mappers/app/TcUserMapper.class
+com/tianci/model/common/dtos/ResponseResult.class
+com/tianci/model/common/enums/AppHttpCodeEnum.class
+com/tianci/model/mappers/app/TcUserImageMapper.class
+com/tianci/model/log/LogPojo.class

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="tianci-ai-media" />
+        <module name="tianci-ai-utils" />
+        <module name="tianci-ai-api" />
+        <module name="tian-ai-gateway" />
+        <module name="tianci-ai-common" />
+        <module name="tianci-ai-model" />
+        <module name="tianci-ai-eureka" />
+        <module name="tianci-ai-login" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Bag_System" options="" />
+      <module name="tian-ai-gateway" options="-parameters" />
+      <module name="tianci-ai-api" options="-parameters" />
+      <module name="tianci-ai-common" options="-parameters" />
+      <module name="tianci-ai-eureka" options="-parameters" />
+      <module name="tianci-ai-login" options="-parameters" />
+      <module name="tianci-ai-media" options="-parameters" />
+      <module name="tianci-ai-model" options="-parameters" />
+      <module name="tianci-ai-utils" options="-parameters" />
+    </option>
+  </component>
+</project>

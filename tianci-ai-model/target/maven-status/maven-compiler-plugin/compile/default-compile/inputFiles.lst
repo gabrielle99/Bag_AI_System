@@ -1,0 +1,11 @@
+/Users/cc/Documents/bag_detection/Bag_System/tianci-ai-model/src/main/java/com/tianci/model/response/CommonCode.java
+/Users/cc/Documents/bag_detection/Bag_System/tianci-ai-model/src/main/java/com/tianci/model/response/ResultCode.java
+/Users/cc/Documents/bag_detection/Bag_System/tianci-ai-model/src/main/java/com/tianci/model/log/LogPojo.java
+/Users/cc/Documents/bag_detection/Bag_System/tianci-ai-model/src/main/java/com/tianci/model/mappers/app/TcUserMapper.java
+/Users/cc/Documents/bag_detection/Bag_System/tianci-ai-model/src/main/java/com/tianci/model/user/pojo/TcUserImageObj.java
+/Users/cc/Documents/bag_detection/Bag_System/tianci-ai-model/src/main/java/com/tianci/model/mappers/log/LogMapper.java
+/Users/cc/Documents/bag_detection/Bag_System/tianci-ai-model/src/main/java/com/tianci/model/common/dtos/ResponseResult.java
+/Users/cc/Documents/bag_detection/Bag_System/tianci-ai-model/src/main/java/com/tianci/model/media/pojo/ImagePojo.java
+/Users/cc/Documents/bag_detection/Bag_System/tianci-ai-model/src/main/java/com/tianci/model/user/pojo/TcUserObject.java
+/Users/cc/Documents/bag_detection/Bag_System/tianci-ai-model/src/main/java/com/tianci/model/common/enums/AppHttpCodeEnum.java
+/Users/cc/Documents/bag_detection/Bag_System/tianci-ai-model/src/main/java/com/tianci/model/mappers/app/TcUserImageMapper.java

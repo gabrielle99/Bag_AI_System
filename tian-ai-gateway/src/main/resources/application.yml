@@ -1,0 +1,31 @@
+server:
+  port: 8090  # this micro server port
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka   # tell the eureka server at this ip that this micro service can be managed by the eureka server
+  instance:
+    prefer-ip-address: true
+spring:
+  application:
+    name: tc-gateway
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*" #cross-origin allow all origins
+            allowMethods: #allow all methods
+              - GET
+              - POST
+              - PUT
+              - DELETE
+      routes:
+        - id: route_user_login
+          uri: http://127.0.0.1:9001
+          predicates:
+            - Path=/api/v1/login/**   # If the address in website contains the suffix, will direct to http://127.0.0.1:9001 -- where there will be login service
+        - id: route_user_media
+          uri: http://127.0.0.1:9006
+          predicates:
+            - Path=/media/**

@@ -1,0 +1,12 @@
+/Users/cc/Documents/bag_detection/Bag_System/tianci-ai-media/src/main/java/com/tianci/media/controller/MediaController.java
+/Users/cc/Documents/bag_detection/Bag_System/tianci-ai-media/src/main/java/com/tianci/media/service/ImageService.java
+/Users/cc/Documents/bag_detection/Bag_System/tianci-ai-media/src/main/java/com/tianci/media/dao/MediaSystemRepository.java
+/Users/cc/Documents/bag_detection/Bag_System/tianci-ai-media/src/main/java/com/tianci/media/config/DatabaseConfig.java
+/Users/cc/Documents/bag_detection/Bag_System/tianci-ai-media/src/main/java/com/tianci/media/config/FastdfsConfig.java
+/Users/cc/Documents/bag_detection/Bag_System/tianci-ai-media/src/main/java/com/tianci/media/config/SecurityFilterConfig.java
+/Users/cc/Documents/bag_detection/Bag_System/tianci-ai-media/src/main/java/com/tianci/media/config/LogConfig.java
+/Users/cc/Documents/bag_detection/Bag_System/tianci-ai-media/src/main/java/com/tianci/media/MediaJarApplication.java
+/Users/cc/Documents/bag_detection/Bag_System/tianci-ai-media/src/main/java/com/tianci/media/config/RedisConfig.java
+/Users/cc/Documents/bag_detection/Bag_System/tianci-ai-media/src/main/java/com/tianci/media/config/InitConfig.java
+/Users/cc/Documents/bag_detection/Bag_System/tianci-ai-media/src/main/java/com/tianci/media/service/MediaUploadService.java
+/Users/cc/Documents/bag_detection/Bag_System/tianci-ai-media/src/main/java/com/tianci/media/service/impl/ImageServiceImpl.java

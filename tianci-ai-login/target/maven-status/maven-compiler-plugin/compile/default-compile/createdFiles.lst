@@ -1,0 +1,5 @@
+com/tianci/login/config/MysqlConfig.class
+com/tianci/login/controller/v1/LoginController.class
+com/tianci/login/service/TcUserLoginService.class
+com/tianci/login/LoginJarApplication.class
+com/tianci/login/service/impl/TcUserLoginServiceImpl.class
