@@ -6,11 +6,11 @@
 
 ## Summary
 
-- [Technique](## Technique)
+- [Technique](##Technique)
 
-- [Result Achieved](## Result Achieved)
+- [Result Achieved](##Result Achieved)
 
-- [Preview](## Preview)
+- [Preview](##Preview)
 
 
 
