@@ -8,7 +8,7 @@
 
 - [Technique](##Technique)
 
-- [Result Achieved](##Result Achieved)
+- [Result](##Result)
 
 - [Preview](##Preview)
 
@@ -51,7 +51,7 @@
 
 
 
-## Result Achieved
+## Result
 
 1) Login & Register (in Mobile App). Record the number of logins in a year.
 
